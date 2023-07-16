@@ -17,9 +17,11 @@ import MoviePage from "./pages/MoviePage";
 import PlaysPage from "./pages/PlaysPage";
 
 // Axios Default settings
-axios.defaults.baseURL = "https://api.themoviedb.org/3";
+axios.defaults.baseURL = "http://api.themoviedb.org/3";
 axios.defaults.params = {};
 axios.defaults.params["api_key"] = import.meta.env.VITE_API_KEY;
+
+
 
 const router = createBrowserRouter([
   {
