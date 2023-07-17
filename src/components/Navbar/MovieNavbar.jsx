@@ -2,6 +2,7 @@ import { BiShareAlt, BiSearch, BiMenu, BiChevronDown } from "react-icons/bi";
 import NavLogo from "../../assets/Images/cine-pass.png";
 import { useContext } from "react";
 import { MovieContext } from "../../Context/Movie";
+import { Link } from "react-router-dom";
 
 const NavSm = () => {
   const { movie } = useContext(MovieContext);
@@ -27,9 +28,11 @@ const NavLg = () => {
     <>
       <div className="container mx-auto px-2 flex items-center justify-between">
         <div className="flex gap-4 items-center w-1/2">
-          <div className="w-28 h-14">
-            <img src={NavLogo} alt="Nav-Logo" className="w-full h-full" />
-          </div>
+          <Link to="/">
+            <div className="w-28 h-14">
+              <img src={NavLogo} alt="Nav-Logo" className="w-full h-full" />
+            </div>
+          </Link>
           <div className="w-full flex items-center gap-3 bg-white py-2 px-3 rounded-md">
             <BiSearch />
             <input

@@ -8,6 +8,7 @@ import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Slider from "react-slick";
+import Footer from "../Footer/Footer";
 
 // import { SiPaytm, SiVisa } from "react-icons/si";
 
@@ -216,6 +217,7 @@ const MoviePage = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

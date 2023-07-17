@@ -11,7 +11,9 @@ const NavSm = () => {
     <>
       <div className="text-white flex items-center justify-between">
         <div>
-          <h3 className="text-xl text-cinePass font-bold">It all starts here!</h3>
+          <h3 className="text-xl text-cinePass font-bold">
+            It all starts here!
+          </h3>
           <span className="text-grey-400 text-xs flex items-center">
             Chennai <BiChevronRight />
           </span>
@@ -42,9 +44,9 @@ const NavLg = () => {
     <>
       <div className="container mx-auto px-2 flex items-center justify-between">
         <div className="flex gap-4 items-center w-1/2">
-          <div className="w-28 h-14">
-            <img src={NavLogo} alt="Nav-Logo" className="w-full h-full" />
-          </div>
+            <div className="w-28 h-14">
+              <img src={NavLogo} alt="Nav-Logo" className="w-full h-full" />
+            </div>
           <div className="w-full flex items-center gap-3 bg-white py-2 px-3 rounded-md">
             <BiSearch />
             <input

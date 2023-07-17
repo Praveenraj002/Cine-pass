@@ -4,6 +4,7 @@ import EntertainmentBanner from "../assets/Images/entertainment-banner.png";
 import PosterSlider from "../components/PosterSlider/PosterSlider";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Footer from "../Footer/Footer";
 
 const HomePage = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
@@ -93,6 +94,7 @@ const HomePage = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
